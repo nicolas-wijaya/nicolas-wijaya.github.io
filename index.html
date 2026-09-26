@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portofolio Nicolas Wijaya - Guru Matematika dan Web Developer. Menggabungkan logika matematika dengan keahlian pemrograman untuk menciptakan solusi digital dan pembelajaran yang efektif.">
+    <meta name="description" content="Profil Nicolas Wijaya, guru Matematika aktif di MTs Swasta Hidayatul Ma'arif Temiyang, Indramayu, serta mahasiswa S1 Pendidikan Matematika Universitas Terbuka melalui SALUT Patrol Indramayu.">
     <meta name="keywords" content="Nicolas Wijaya, Portofolio, Guru Matematika, Web Developer, Pendidikan Matematika, Pengembangan Web, HTML, CSS, JavaScript, PHP, Python">
     <meta name="author" content="Nicolas Wijaya">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Portofolio - Nicolas Wijaya">
-    <meta property="og:description" content="Guru Matematika & Web Developer - Menggabungkan logika matematika dengan keahlian pemrograman">
+    <meta property="og:description" content="Guru Matematika di MTs Swasta Hidayatul Ma'arif Temiyang dan mahasiswa S1 Pendidikan Matematika Universitas Terbuka">
     <meta property="og:image" content="https://pelajarnu.mtshimatemiyang.sch.id/uploads/avatar/avatar_10_1782762687.png">
     <meta property="og:type" content="website">
     <title>Portofolio - Nicolas Wijaya | Guru Matematika & Web Developer</title>
@@ -171,6 +171,16 @@
                 radial-gradient(at 0% 50%, rgba(96, 165, 250, 0.02) 0px, transparent 50%);
             background-attachment: fixed;
         }
+
+        .typing-cursor { display: inline-block; color: #2563eb; animation: typingBlink .75s steps(1) infinite; }
+        @keyframes typingBlink { 50% { opacity: 0; } }
+        #typingText { overflow-wrap: anywhere; }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            .typing-cursor { animation: none; }
+            .animate-on-scroll { opacity: 1; transform: none; transition: none; }
+            .skill-bar { transition: none; }
+        }
     </style>
 </head>
 <body class="text-dark font-sans">
@@ -203,7 +213,7 @@
             </div>
 
             <!-- Mobile Menu Button -->
-            <button class="md:hidden text-xl text-primary p-2 rounded-lg hover:bg-primary/10 transition-colors" id="menuBtn">
+            <button class="md:hidden text-xl text-primary p-2 rounded-lg hover:bg-primary/10 transition-colors" id="menuBtn" type="button" aria-label="Buka menu navigasi" aria-controls="mobileMenu" aria-expanded="false">
                 <i class="fa fa-bars"></i>
             </button>
         </nav>
@@ -232,10 +242,11 @@
                         <span class="text-gradient">Nicolas Wijaya</span>
                     </h1>
                     <h2 class="text-xl md:text-2xl font-medium text-gray-600 mb-6">
-                        Guru Matematika & Web Developer
+                         <span id="typingText" aria-hidden="true"></span><span class="typing-cursor" aria-hidden="true">|</span>
+                         <span class="sr-only">Guru Matematika aktif di MTs Swasta Hidayatul Ma'arif Temiyang, Indramayu. Mahasiswa S1 Pendidikan Matematika Universitas Terbuka melalui SALUT Patrol Indramayu.</span>
                     </h2>
                     <p class="text-gray-600 mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed">
-                        Menggabungkan logika matematika yang tajam dengan keahlian pemrograman untuk menciptakan solusi digital yang inovatif dan metode pembelajaran yang efektif serta menyenangkan.
+                        Saya mengajar Matematika di MTs Swasta Hidayatul Ma'arif Temiyang, Indramayu, sambil menempuh S1 Pendidikan Matematika di Universitas Terbuka melalui SALUT Patrol Indramayu.
                     </p>
                     <div class="flex flex-wrap gap-4 justify-center md:justify-start">
                         <a href="#tentang" class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all btn-glow shadow-lg shadow-primary/20">
@@ -264,7 +275,7 @@
             <div class="text-center mb-16 animate-on-scroll">
                 <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold mb-3">Tentang Saya</h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
-                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Menggabungkan dua dunia: logika matematika dan kreativitas teknologi</p>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Perjalanan saya sebagai pengajar Matematika, mahasiswa, dan pengembang web</p>
             </div>
 
             <div class="max-w-4xl mx-auto animate-on-scroll" style="animation-delay: 0.1s;">
@@ -275,7 +286,7 @@
                         </div>
                         <div class="flex-1">
                             <p class="text-gray-700 leading-relaxed mb-4 text-lg">
-                                Perkenalkan nama saya <strong class="text-primary">Nicolas Wijaya</strong>. Saya adalah seorang guru Matematika yang saat ini sedang menempuh pendidikan Sarjana Strata 1 (S1) di <strong>SALUT Patrol Indramayu</strong> dengan mengambil jurusan <strong>Pendidikan Matematika</strong>.
+                                Perkenalkan nama saya <strong class="text-primary">Nicolas Wijaya</strong>. Saya lahir pada <strong>24 September 2005</strong> dan merupakan pengajar aktif mata pelajaran Matematika di <strong>MTs Swasta Hidayatul Ma'arif Temiyang, Indramayu</strong>. Saat ini saya juga menempuh pendidikan S1 jurusan <strong>Pendidikan Matematika di Universitas Terbuka</strong> melalui <strong>SALUT Patrol Indramayu</strong>.
                             </p>
                             <p class="text-gray-700 leading-relaxed">
                                 Selain memiliki ketertarikan yang besar di bidang pendidikan dan matematika, saya juga merupakan seorang <strong>Web Developer</strong> yang antusias. Saya memahami dan menguasai berbagai bahasa pemrograman serta teknologi pengembangan web yang memungkinkan saya mewujudkan ide menjadi solusi digital yang nyata.
@@ -283,6 +294,13 @@
                         </div>
                     </div>
                     
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8" aria-label="Informasi pribadi dan pendidikan">
+                        <div class="bg-blue-50 rounded-xl p-5"><p class="text-sm text-gray-500 mb-1">Tanggal lahir</p><p class="font-semibold text-dark">24 September 2005</p></div>
+                        <div class="bg-blue-50 rounded-xl p-5"><p class="text-sm text-gray-500 mb-1">Tempat mengajar</p><p class="font-semibold text-dark">MTs Swasta Hidayatul Ma'arif Temiyang, Indramayu</p></div>
+                        <div class="bg-blue-50 rounded-xl p-5"><p class="text-sm text-gray-500 mb-1">Pendidikan saat ini</p><p class="font-semibold text-dark">S1 Pendidikan Matematika, Universitas Terbuka</p></div>
+                        <div class="bg-blue-50 rounded-xl p-5"><p class="text-sm text-gray-500 mb-1">Layanan pendidikan</p><p class="font-semibold text-dark">SALUT Patrol Indramayu</p></div>
+                    </div>
+
                     <h3 class="text-xl font-semibold text-primary mb-4 flex items-center gap-2">
                         <i class="fa fa-code"></i> Teknologi yang Saya Kuasai
                     </h3>
@@ -466,19 +484,61 @@
                 </a>
             </div>
             <div class="border-t border-gray-700 pt-8">
-                <p class="text-gray-500 text-sm">© 2026 Nicolas Wijaya. Hak Cipta Dilindungi.</p>
+                <p class="text-gray-500 text-sm">© <span id="copyrightYear">2026</span> Nicolas Wijaya. Hak Cipta Dilindungi.</p>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
     <script>
+
+        // Teks hero muncul karakter demi karakter, lalu berganti kalimat.
+        (() => {
+            const element = document.getElementById('typingText');
+            const phrases = [
+                'Guru Matematika di MTs Swasta Hidayatul Ma\'arif Temiyang',
+                'Mahasiswa S1 Pendidikan Matematika Universitas Terbuka',
+                'Belajar dan mengajar di Indramayu',
+                'Web Developer'
+            ];
+            if (!element) return;
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                element.textContent = phrases[0];
+                document.querySelector('.typing-cursor').style.display = 'none';
+                return;
+            }
+            let phraseIndex = 0, charIndex = 0, deleting = false;
+            function typeNext() {
+                const phrase = phrases[phraseIndex];
+                if (!deleting) {
+                    element.textContent = phrase.slice(0, ++charIndex);
+                    if (charIndex === phrase.length) {
+                        deleting = true;
+                        setTimeout(typeNext, 2100);
+                        return;
+                    }
+                } else {
+                    element.textContent = phrase.slice(0, --charIndex);
+                    if (charIndex === 0) {
+                        deleting = false;
+                        phraseIndex = (phraseIndex + 1) % phrases.length;
+                        setTimeout(typeNext, 380);
+                        return;
+                    }
+                }
+                setTimeout(typeNext, deleting ? 30 : 65);
+            }
+            setTimeout(typeNext, 450);
+        })();
+        document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+
         // Mobile Menu Toggle
         const menuBtn = document.getElementById('menuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
         
         menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            const isHidden = mobileMenu.classList.toggle('hidden');
+            menuBtn.setAttribute('aria-expanded', String(!isHidden));
         });
 
         // Close mobile menu when clicking a link
@@ -486,6 +546,7 @@
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
+                menuBtn.setAttribute('aria-expanded', 'false');
             });
         });
 
